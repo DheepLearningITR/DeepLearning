@@ -1,0 +1,142 @@
+@import "@fontsource/barlow/400.css";
+@import "@fontsource/barlow/500.css";
+@import "@fontsource/barlow/600.css";
+@import "@fontsource/barlow-condensed/500.css";
+@import "@fontsource/barlow-condensed/600.css";
+@import "@fontsource/barlow-condensed/700.css";
+@import "tailwindcss";
+
+@theme {
+  /* The board: painted timber, lettering, lamps, enamel plates */
+  --color-board: #1f4d3a;
+  --color-board-deep: #163a2b;
+  --color-board-line: #2f6450;
+  --color-paint: #f4f1ea;
+  --color-paint-dim: #b8cabf;
+  --color-lamp: #f2b33d;
+  --color-lamp-deep: #b9811c;
+  --color-lamp-off: #2a5a46;
+  --color-lamp-hover: #f6c25c;
+  /* Amber dark enough for small text on the light sheets (5.6:1). */
+  --color-lamp-ink: #8a5d0c;
+  --color-plate: #ffffff;
+  --color-plate-ink: #141414;
+  --color-stamp: #c23b27;
+
+  /* The working ground */
+  --color-ground: #e6ebe8;
+  --color-surface: #fbfcfb;
+  --color-ink: #121a16;
+  --color-ink-2: #45524b;
+  --color-ink-3: #6a776f;
+  --color-rule: #c8d1cc;
+
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-board: "Barlow Condensed", "Barlow", ui-sans-serif, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "Consolas", monospace;
+
+  --ease-drop: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    /* Sized for a shared screen: 18px base. */
+    font-size: 112.5%;
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    scrollbar-color: var(--color-ink-3) var(--color-ground);
+  }
+  body {
+    min-height: 100dvh;
+    background: var(--color-ground);
+  }
+  ::selection {
+    background: var(--color-lamp);
+    color: var(--color-plate-ink);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-lamp);
+    outline-offset: 2px;
+  }
+  input {
+    caret-color: var(--color-board);
+  }
+  a {
+    text-underline-offset: 0.2em;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-rule);
+    border: 3px solid var(--color-ground);
+  }
+}
+
+@layer components {
+  .board-label {
+    font-family: var(--font-board);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
+
+/* Number plates drop into their slot when the value changes. */
+@keyframes plate-drop {
+  from {
+    transform: translateY(-55%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.plate-cell-new {
+  animation: plate-drop 260ms var(--ease-drop) both;
+}
+
+/* The lamp switches on with a short filament warm-up. */
+@keyframes lamp-on {
+  0% {
+    background-color: var(--color-lamp-off);
+  }
+  40% {
+    background-color: var(--color-lamp-deep);
+  }
+  100% {
+    background-color: var(--color-lamp);
+  }
+}
+.lamp-on {
+  animation: lamp-on 320ms ease-out both;
+}
+
+@keyframes row-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.row-in {
+  animation: row-in 240ms var(--ease-drop) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate-cell-new,
+  .lamp-on,
+  .row-in {
+    animation: none;
+  }
+}

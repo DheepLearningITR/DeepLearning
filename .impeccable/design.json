@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T15:55:49.317Z",
+  "title": "Design System: FanDesk",
+  "extensions": {
+    "colorMeta": {
+      "board": {
+        "role": "primary",
+        "displayName": "Bottle-Green Board",
+        "canonical": "#1f4d3a",
+        "tonalRamp": [
+          "oklch(15.0% 0.061 163.9)",
+          "oklch(26.0% 0.061 163.9)",
+          "oklch(37.0% 0.061 163.9)",
+          "oklch(48.0% 0.061 163.9)",
+          "oklch(60.0% 0.061 163.9)",
+          "oklch(71.0% 0.061 163.9)",
+          "oklch(83.0% 0.061 163.9)",
+          "oklch(95.0% 0.061 163.9)"
+        ]
+      },
+      "board-deep": {
+        "role": "primary",
+        "displayName": "Board Shadow Green",
+        "canonical": "#163a2b",
+        "tonalRamp": [
+          "oklch(15.0% 0.050 163.7)",
+          "oklch(26.0% 0.050 163.7)",
+          "oklch(37.0% 0.050 163.7)",
+          "oklch(48.0% 0.050 163.7)",
+          "oklch(60.0% 0.050 163.7)",
+          "oklch(71.0% 0.050 163.7)",
+          "oklch(83.0% 0.050 163.7)",
+          "oklch(95.0% 0.050 163.7)"
+        ]
+      },
+      "board-line": {
+        "role": "primary",
+        "displayName": "Painted Rule Green",
+        "canonical": "#2f6450",
+        "tonalRamp": [
+          "oklch(15.0% 0.066 166.6)",
+          "oklch(26.0% 0.066 166.6)",
+          "oklch(37.0% 0.066 166.6)",
+          "oklch(48.0% 0.066 166.6)",
+          "oklch(60.0% 0.066 166.6)",
+          "oklch(71.0% 0.066 166.6)",
+          "oklch(83.0% 0.066 166.6)",
+          "oklch(95.0% 0.066 166.6)"
+        ]
+      },
+      "lamp": {
+        "role": "secondary",
+        "displayName": "Lamp Amber",
+        "canonical": "#f2b33d",
+        "tonalRamp": [
+          "oklch(15.0% 0.147 79.0)",
+          "oklch(26.0% 0.147 79.0)",
+          "oklch(37.0% 0.147 79.0)",
+          "oklch(48.0% 0.147 79.0)",
+          "oklch(60.0% 0.147 79.0)",
+          "oklch(71.0% 0.147 79.0)",
+          "oklch(83.0% 0.147 79.0)",
+          "oklch(95.0% 0.147 79.0)"
+        ]
+      },
+      "lamp-deep": {
+        "role": "secondary",
+        "displayName": "Filament Amber",
+        "canonical": "#b9811c",
+        "tonalRamp": [
+          "oklch(15.0% 0.127 76.0)",
+          "oklch(26.0% 0.127 76.0)",
+          "oklch(37.0% 0.127 76.0)",
+          "oklch(48.0% 0.127 76.0)",
+          "oklch(60.0% 0.127 76.0)",
+          "oklch(71.0% 0.127 76.0)",
+          "oklch(83.0% 0.127 76.0)",
+          "oklch(95.0% 0.127 76.0)"
+        ]
+      },
+      "lamp-off": {
+        "role": "secondary",
+        "displayName": "Unlit Lamp",
+        "canonical": "#2a5a46",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 164.3)",
+          "oklch(26.0% 0.063 164.3)",
+          "oklch(37.0% 0.063 164.3)",
+          "oklch(48.0% 0.063 164.3)",
+          "oklch(60.0% 0.063 164.3)",
+          "oklch(71.0% 0.063 164.3)",
+          "oklch(83.0% 0.063 164.3)",
+          "oklch(95.0% 0.063 164.3)"
+        ]
+      },
+      "stamp": {
+        "role": "tertiary",
+        "displayName": "Signal Stamp Red",
+        "canonical": "#c23b27",
+        "tonalRamp": [
+          "oklch(15.0% 0.175 31.4)",
+          "oklch(26.0% 0.175 31.4)",
+          "oklch(37.0% 0.175 31.4)",
+          "oklch(48.0% 0.175 31.4)",
+          "oklch(60.0% 0.175 31.4)",
+          "oklch(71.0% 0.175 31.4)",
+          "oklch(83.0% 0.175 31.4)",
+          "oklch(95.0% 0.175 31.4)"
+        ]
+      },
+      "paint": {
+        "role": "neutral",
+        "displayName": "Painted Lettering",
+        "canonical": "#f4f1ea",
+        "tonalRamp": [
+          "oklch(15.0% 0.010 87.5)",
+          "oklch(26.0% 0.010 87.5)",
+          "oklch(37.0% 0.010 87.5)",
+          "oklch(48.0% 0.010 87.5)",
+          "oklch(60.0% 0.010 87.5)",
+          "oklch(71.0% 0.010 87.5)",
+          "oklch(83.0% 0.010 87.5)",
+          "oklch(95.0% 0.010 87.5)"
+        ]
+      },
+      "paint-dim": {
+        "role": "neutral",
+        "displayName": "Faded Lettering",
+        "canonical": "#b8cabf",
+        "tonalRamp": [
+          "oklch(15.0% 0.025 159.0)",
+          "oklch(26.0% 0.025 159.0)",
+          "oklch(37.0% 0.025 159.0)",
+          "oklch(48.0% 0.025 159.0)",
+          "oklch(60.0% 0.025 159.0)",
+          "oklch(71.0% 0.025 159.0)",
+          "oklch(83.0% 0.025 159.0)",
+          "oklch(95.0% 0.025 159.0)"
+        ]
+      },
+      "plate": {
+        "role": "neutral",
+        "displayName": "Enamel White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.0% 0.000 89.9)",
+          "oklch(37.0% 0.000 89.9)",
+          "oklch(48.0% 0.000 89.9)",
+          "oklch(60.0% 0.000 89.9)",
+          "oklch(71.0% 0.000 89.9)",
+          "oklch(83.0% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "plate-ink": {
+        "role": "neutral",
+        "displayName": "Plate Black",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.0% 0.000 89.9)",
+          "oklch(37.0% 0.000 89.9)",
+          "oklch(48.0% 0.000 89.9)",
+          "oklch(60.0% 0.000 89.9)",
+          "oklch(71.0% 0.000 89.9)",
+          "oklch(83.0% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Working Ground",
+        "canonical": "#e6ebe8",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 160.1)",
+          "oklch(26.0% 0.007 160.1)",
+          "oklch(37.0% 0.007 160.1)",
+          "oklch(48.0% 0.007 160.1)",
+          "oklch(60.0% 0.007 160.1)",
+          "oklch(71.0% 0.007 160.1)",
+          "oklch(83.0% 0.007 160.1)",
+          "oklch(95.0% 0.007 160.1)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Sheet",
+        "canonical": "#fbfcfb",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 145.6)",
+          "oklch(26.0% 0.002 145.6)",
+          "oklch(37.0% 0.002 145.6)",
+          "oklch(48.0% 0.002 145.6)",
+          "oklch(60.0% 0.002 145.6)",
+          "oklch(71.0% 0.002 145.6)",
+          "oklch(83.0% 0.002 145.6)",
+          "oklch(95.0% 0.002 145.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#121a16",
+        "tonalRamp": [
+          "oklch(15.0% 0.014 163.2)",
+          "oklch(26.0% 0.014 163.2)",
+          "oklch(37.0% 0.014 163.2)",
+          "oklch(48.0% 0.014 163.2)",
+          "oklch(60.0% 0.014 163.2)",
+          "oklch(71.0% 0.014 163.2)",
+          "oklch(83.0% 0.014 163.2)",
+          "oklch(95.0% 0.014 163.2)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Two",
+        "canonical": "#45524b",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 161.9)",
+          "oklch(26.0% 0.020 161.9)",
+          "oklch(37.0% 0.020 161.9)",
+          "oklch(48.0% 0.020 161.9)",
+          "oklch(60.0% 0.020 161.9)",
+          "oklch(71.0% 0.020 161.9)",
+          "oklch(83.0% 0.020 161.9)",
+          "oklch(95.0% 0.020 161.9)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink Three",
+        "canonical": "#6a776f",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 158.7)",
+          "oklch(26.0% 0.020 158.7)",
+          "oklch(37.0% 0.020 158.7)",
+          "oklch(48.0% 0.020 158.7)",
+          "oklch(60.0% 0.020 158.7)",
+          "oklch(71.0% 0.020 158.7)",
+          "oklch(83.0% 0.020 158.7)",
+          "oklch(95.0% 0.020 158.7)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#c8d1cc",
+        "tonalRamp": [
+          "oklch(15.0% 0.012 162.0)",
+          "oklch(26.0% 0.012 162.0)",
+          "oklch(37.0% 0.012 162.0)",
+          "oklch(48.0% 0.012 162.0)",
+          "oklch(60.0% 0.012 162.0)",
+          "oklch(71.0% 0.012 162.0)",
+          "oklch(83.0% 0.012 162.0)",
+          "oklch(95.0% 0.012 162.0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The FanDesk wordmark only; History page title at 600 / 1.8rem."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Panel titles painted on a panel: Route board, Ball by ball, Answer."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Agent names and the Total row on the route board."
+      },
+      "plate": {
+        "displayName": "Plate",
+        "purpose": "Number-plate characters and every metric figure; tabular. 1rem on narrow boards, 1.6rem in the header."
+      },
+      "body-lead": {
+        "displayName": "Body lead",
+        "purpose": "Answer text (max 68ch) and the question input."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Routing reason, timeline titles and notes."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase column heads, status words, inline field labels, agent tags."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "SQL, tool names and source tables only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "board-drop",
+        "value": "0 6px 18px -8px rgb(10 30 20 / 0.55)",
+        "purpose": "The route board only."
+      },
+      {
+        "name": "sheet-lift",
+        "value": "0 2px 10px -4px rgb(10 30 20 / 0.25)",
+        "purpose": "Answer card, timeline panel, History table."
+      },
+      {
+        "name": "plate-contact",
+        "value": "0 1px 2px rgb(0 0 0 / 0.35)",
+        "purpose": "Filled number-plate cells read as raised enamel."
+      },
+      {
+        "name": "button-lift",
+        "value": "0 2px 4px rgb(0 0 0 / 0.2)",
+        "purpose": "The Ask button; removed when disabled."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-drop",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Mechanical drop-and-settle easing for plates and rows."
+      },
+      {
+        "name": "plate-drop",
+        "value": "260ms ease-drop; translateY(-55%) and opacity 0 to rest",
+        "purpose": "A changed plate character drops into its slot."
+      },
+      {
+        "name": "lamp-on",
+        "value": "320ms ease-out; lamp-off to lamp-deep (40%) to lamp",
+        "purpose": "Filament warm-up when a lamp lights."
+      },
+      {
+        "name": "row-in",
+        "value": "240ms ease-drop; translateY(-6px) and opacity 0 to rest",
+        "purpose": "New timeline rows, reason line, answer card."
+      },
+      {
+        "name": "highlight-fade",
+        "value": "500ms colour transition; lamp at 25% for 2.4s",
+        "purpose": "Timeline row flash after a Total plate is clicked."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none",
+        "purpose": "All keyframe motion and the spinner are disabled under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "40rem"
+      },
+      {
+        "name": "lg",
+        "value": "64rem",
+        "purpose": "Two-column Ask layout with sticky timeline."
+      },
+      {
+        "name": "board-pad",
+        "value": "@container 40rem",
+        "purpose": "Route board side padding widens."
+      },
+      {
+        "name": "board-wide",
+        "value": "@container 45rem",
+        "purpose": "Route board switches to the fixed eight-column grid."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ask Button",
+      "kind": "button",
+      "refersTo": "button-ask",
+      "description": "The one amber-filled control on a screen; submits the question.",
+      "html": "<button class=\"ds-btn-ask\" type=\"button\">Ask <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-ask { display: inline-flex; align-items: center; gap: 0.5rem; height: 3.25rem; padding: 0 1.5rem; background: var(--color-lamp, #f2b33d); color: var(--color-plate-ink, #141414); border: 0; border-radius: 0; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 1.25rem; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: 0 2px 4px rgb(0 0 0 / 0.2); cursor: pointer; transition: background-color 150ms; } .ds-btn-ask:hover { background: #f6c25c; } .ds-btn-ask:active { transform: translateY(1px); } .ds-btn-ask:focus-visible { outline: 3px solid var(--color-lamp, #f2b33d); outline-offset: 2px; } .ds-btn-ask:disabled { background: var(--color-rule, #c8d1cc); color: var(--color-ink-3, #6a776f); box-shadow: none; cursor: not-allowed; }"
+    },
+    {
+      "name": "Question Input",
+      "kind": "input",
+      "refersTo": "input-question",
+      "description": "Square surface field for the question; board-green focus border plus amber ring.",
+      "html": "<input class=\"ds-input-question\" placeholder=\"Ask about IPL cricket or movies…\" aria-label=\"Question\" />",
+      "css": ".ds-input-question { width: 100%; padding: 0.75rem 1rem; background: var(--color-surface, #fbfcfb); color: var(--color-ink, #121a16); border: 1px solid var(--color-rule, #c8d1cc); border-radius: 0; font-family: var(--font-sans, 'Barlow', sans-serif); font-size: 1.2rem; caret-color: var(--color-board, #1f4d3a); } .ds-input-question::placeholder { color: var(--color-ink-3, #6a776f); } .ds-input-question:focus { outline: none; border-color: var(--color-board, #1f4d3a); } .ds-input-question:focus-visible { outline: 3px solid var(--color-lamp, #f2b33d); outline-offset: 2px; }"
+    },
+    {
+      "name": "Sample Question Chip",
+      "kind": "chip",
+      "refersTo": "chip-sample",
+      "description": "Square hairline chip that asks a sample question.",
+      "html": "<button class=\"ds-chip\" type=\"button\">Who took the most wickets in IPL 2023?</button>",
+      "css": ".ds-chip { padding: 0.375rem 0.75rem; background: var(--color-surface, #fbfcfb); color: var(--color-ink-2, #45524b); border: 1px solid var(--color-rule, #c8d1cc); border-radius: 0; font-family: var(--font-sans, 'Barlow', sans-serif); font-size: 0.95rem; cursor: pointer; transition: color 150ms, border-color 150ms; } .ds-chip:hover { border-color: var(--color-board, #1f4d3a); color: var(--color-board, #1f4d3a); } .ds-chip:focus-visible { outline: 3px solid var(--color-lamp, #f2b33d); outline-offset: 2px; } .ds-chip:disabled { opacity: 0.5; cursor: not-allowed; }"
+    },
+    {
+      "name": "Header Strip Navigation",
+      "kind": "nav",
+      "refersTo": "nav-tab",
+      "description": "Green strip with wordmark lamp, condensed tabs, amber bar under the active tab.",
+      "html": "<nav class=\"ds-strip\"><span class=\"ds-strip-mark\"><span class=\"ds-strip-dot\"></span>FanDesk</span><a class=\"ds-tab ds-tab-active\" href=\"#\">Ask</a><a class=\"ds-tab\" href=\"#\">History</a></nav>",
+      "css": ".ds-strip { display: flex; align-items: center; gap: 1.75rem; padding: 0.875rem 1.5rem; background: var(--color-board, #1f4d3a); color: var(--color-paint, #f4f1ea); } .ds-strip-mark { display: inline-flex; align-items: center; gap: 0.625rem; margin-right: 1rem; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 700; font-size: 1.9rem; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; } .ds-strip-dot { width: 1rem; height: 1rem; border-radius: 9999px; background: var(--color-lamp, #f2b33d); border: 2px solid var(--color-lamp-deep, #b9811c); } .ds-tab { position: relative; padding: 0.25rem; color: var(--color-paint-dim, #b8cabf); text-decoration: none; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 1.15rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 150ms; } .ds-tab:hover { color: var(--color-paint, #f4f1ea); } .ds-tab:focus-visible { outline: 3px solid var(--color-lamp, #f2b33d); outline-offset: 2px; } .ds-tab-active { color: var(--color-paint, #f4f1ea); } .ds-tab-active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -0.95rem; height: 4px; background: var(--color-lamp, #f2b33d); }"
+    },
+    {
+      "name": "Number Plate",
+      "kind": "custom",
+      "refersTo": "number-plate-cell",
+      "description": "Enamel cells, one character each, right-aligned into fixed slots; empty slots are board-deep.",
+      "html": "<span class=\"ds-plates\" role=\"img\" aria-label=\"Cost in dollars: 0.0087\"><span class=\"ds-plate ds-plate-empty\"></span><span class=\"ds-plate\">0</span><span class=\"ds-plate\">.</span><span class=\"ds-plate\">0</span><span class=\"ds-plate\">0</span><span class=\"ds-plate\">8</span><span class=\"ds-plate\">7</span></span>",
+      "css": ".ds-plates { display: inline-flex; gap: 3px; padding: 0.5rem; background: var(--color-board, #1f4d3a); } .ds-plate { display: grid; place-items: center; width: 1.2rem; height: 2.25rem; background: var(--color-plate, #ffffff); color: var(--color-plate-ink, #141414); font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 1.2rem; line-height: 1; font-variant-numeric: tabular-nums; box-shadow: 0 1px 2px rgb(0 0 0 / 0.35); } .ds-plate-empty { background: var(--color-board-deep, #163a2b); box-shadow: none; }"
+    },
+    {
+      "name": "Agent Row with Lamp",
+      "kind": "custom",
+      "refersTo": "lamp-lit",
+      "description": "A route-board row: lamp, condensed agent name, handles, and a status word; the lamp never stands alone.",
+      "html": "<div class=\"ds-row\"><span class=\"ds-lamp ds-lamp-lit\"></span><span><span class=\"ds-row-name\">Stats Guru</span><span class=\"ds-row-handles\">IPL · SQLite</span></span><span class=\"ds-row-status ds-live\">Working</span></div><div class=\"ds-row\"><span class=\"ds-lamp\"></span><span><span class=\"ds-row-name ds-quiet\">Cinema Buff</span><span class=\"ds-row-handles\">Movies · Wikipedia</span></span><span class=\"ds-row-status\">Not used</span></div>",
+      "css": ".ds-row { display: grid; grid-template-columns: 1.75rem minmax(8.5rem, 1fr) auto; align-items: start; gap: 0.625rem; padding: 0.75rem 1.5rem; background: var(--color-board, #1f4d3a); color: var(--color-paint, #f4f1ea); border-top: 1px solid var(--color-board-line, #2f6450); } .ds-lamp { display: block; width: 1.25rem; height: 1.25rem; margin-top: 0.35rem; border-radius: 9999px; background: var(--color-lamp-off, #2a5a46); border: 2px solid var(--color-board-deep, #163a2b); } .ds-lamp-lit { background: var(--color-lamp, #f2b33d); border-color: var(--color-lamp-deep, #b9811c); } .ds-row-name { display: block; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 1.45rem; line-height: 1.25; letter-spacing: 0.06em; text-transform: uppercase; } .ds-quiet { color: var(--color-paint-dim, #b8cabf); } .ds-row-handles { display: block; font-family: var(--font-sans, 'Barlow', sans-serif); font-size: 0.9rem; color: var(--color-paint-dim, #b8cabf); } .ds-row-status { margin-top: 0.25rem; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-paint-dim, #b8cabf); } .ds-live { color: var(--color-lamp, #f2b33d); }"
+    },
+    {
+      "name": "Status Stamp",
+      "kind": "chip",
+      "refersTo": "status-stamp",
+      "description": "Paint-on-red word for failed, blocked, declined, or out-of-scope only.",
+      "html": "<span class=\"ds-stamp\">Declined</span>",
+      "css": ".ds-stamp { display: inline-block; padding: 0.125rem 0.375rem; background: var(--color-stamp, #c23b27); color: var(--color-paint, #f4f1ea); font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; }"
+    },
+    {
+      "name": "Answer Card",
+      "kind": "card",
+      "refersTo": "card-surface",
+      "description": "Square surface sheet with condensed headline and reading-size answer text.",
+      "html": "<section class=\"ds-card\"><h2 class=\"ds-card-title\">Answer <span>from Stats Guru</span></h2><p class=\"ds-card-body\">Chennai Super Kings' top run-scorer across all IPL seasons is Suresh Raina with 4,687 runs.</p><a class=\"ds-link\" href=\"#\">View trace in Phoenix</a></section>",
+      "css": ".ds-card { padding: 1rem 1.5rem 1.25rem; background: var(--color-surface, #fbfcfb); color: var(--color-ink, #121a16); border-radius: 0; box-shadow: 0 2px 10px -4px rgb(10 30 20 / 0.25); } .ds-card-title { margin: 0; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 1.35rem; letter-spacing: 0.08em; text-transform: uppercase; } .ds-card-title span { color: var(--color-ink-3, #6a776f); } .ds-card-body { max-width: 68ch; margin: 0.75rem 0 1rem; font-family: var(--font-sans, 'Barlow', sans-serif); font-size: 1.2rem; line-height: 1.625; } .ds-link { font-family: var(--font-sans, 'Barlow', sans-serif); font-weight: 600; font-size: 0.95rem; color: var(--color-board, #1f4d3a); text-decoration: underline; text-decoration-color: var(--color-rule, #c8d1cc); text-underline-offset: 0.2em; } .ds-link:hover { text-decoration-color: var(--color-board, #1f4d3a); } .ds-link:focus-visible { outline: 3px solid var(--color-lamp, #f2b33d); outline-offset: 2px; }"
+    },
+    {
+      "name": "Timeline Step",
+      "kind": "custom",
+      "refersTo": "card-surface",
+      "description": "Ball-by-ball row: index, line icon, title, agent tag, latency bar drawn to its true share of the slowest step.",
+      "html": "<div class=\"ds-step\"><span class=\"ds-step-index\">8</span><svg class=\"ds-step-icon\" aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"/><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"/><path d=\"M3 12A9 3 0 0 0 21 12\"/></svg><div><div><span class=\"ds-step-title\">run_sql</span> <span class=\"ds-step-tag\">Stats Guru</span></div><p class=\"ds-step-note\">5 rows</p><div class=\"ds-step-bar\"><span class=\"ds-step-track\"><span class=\"ds-step-fill\" style=\"width: 40%\"></span></span><span class=\"ds-step-ms\">46 ms</span></div></div></div>",
+      "css": ".ds-step { display: grid; grid-template-columns: 2rem 1.5rem minmax(0, 1fr); column-gap: 0.75rem; padding: 0.75rem 1.25rem; background: var(--color-surface, #fbfcfb); border-bottom: 1px solid var(--color-rule, #c8d1cc); } .ds-step-index { padding-top: 0.125rem; text-align: right; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 1.05rem; font-variant-numeric: tabular-nums; color: var(--color-ink-3, #6a776f); } .ds-step-icon { margin-top: 0.25rem; color: var(--color-board, #1f4d3a); } .ds-step-title { font-family: var(--font-mono, ui-monospace, monospace); font-weight: 600; font-size: 0.95rem; color: var(--color-ink, #121a16); } .ds-step-tag { margin-left: 0.5rem; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-ink-3, #6a776f); } .ds-step-note { margin: 0.125rem 0 0; font-family: var(--font-sans, 'Barlow', sans-serif); font-size: 0.95rem; color: var(--color-ink-2, #45524b); } .ds-step-bar { display: flex; align-items: center; gap: 0.75rem; margin-top: 0.5rem; } .ds-step-track { position: relative; flex: 1; height: 0.5rem; background: var(--color-ground, #e6ebe8); } .ds-step-fill { position: absolute; inset: 0 auto 0 0; background: var(--color-board, #1f4d3a); transition: width 500ms; } .ds-step-ms { width: 7rem; text-align: right; font-family: var(--font-board, 'Barlow Condensed', sans-serif); font-weight: 500; font-size: 0.95rem; font-variant-numeric: tabular-nums; color: var(--color-ink-2, #45524b); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Heritage Scoreboard",
+    "overview": "FanDesk is a hand-worked cricket ground scoreboard put on a projector. One bottle-green painted board carries the live state: a fixed row per agent, an amber lamp on whoever is batting, and black-on-white enamel number plates that drop into their slots as each figure arrives. Everything that is not the board sits on a cool light-grey working ground as plain square sheets of near-white surface. The world is built to be read from across a room: an 18px root (`font-size: 112.5%`), condensed capitals for anything painted on the board, and a calm reading face for the questions, reasons, and answers.\n\nThe board is the one source of colour. The header strip and the route board are painted green; the lamp amber marks what is live, chosen, or the one thing to press; signal red appears only as a stamp for failed, blocked, declined, or out-of-scope. State is never carried by colour alone: every lamp has a status word beside it, every stamp is a word.\n\nMotion is mechanical. Plates drop and settle, the lamp warms up through a deeper amber before it is fully lit, new rows slide in 6px. There is no glow, no bounce, and all of it switches off under reduced motion. The world refuses the dark node-graph console with glowing edges; the route is drawn as a painted rail down the left of the board, not a graph canvas.",
+    "keyCharacteristics": [
+      "One painted green board on a cool grey ground; colour lives on the board.",
+      "Amber lamps and an amber rail for the live or chosen path; one amber-filled control.",
+      "Every metric in enamel number plates or condensed tabular figures, in fixed columns.",
+      "Square corners everywhere except the round lamps.",
+      "Condensed uppercase for painted labels, sentence-case Barlow for reading.",
+      "Short drop-and-settle motion, disabled under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Board and Ground Rule",
+        "body": "Green is the board. Paint it only for scoreboard furniture (header strip, route board, table head); everything else is a square surface sheet on the grey ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Lamp Rule",
+        "body": "Amber means live, chosen, or press-here. The Ask button is the only amber-filled control on a screen.",
+        "section": "colors"
+      },
+      {
+        "name": "The Stamp Rule",
+        "body": "Red appears only for failed, blocked, declined, or out-of-scope, and always as a word.",
+        "section": "colors"
+      },
+      {
+        "name": "The Never Colour Alone Rule",
+        "body": "Every lamp sits beside a status word (Waiting, Working, Done, Not used, Routed, Declined); every red mark is a word.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paint and Print Rule",
+        "body": "Condensed uppercase is paint: labels, headings, names, status words, figures. Anything a person reads as a sentence (questions, reasons, answers, notes) is sentence-case Barlow.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plate Rule",
+        "body": "Every metric (calls, tokens, cost, time) is set in Barlow Condensed tabular figures; on the board it sits in enamel plates with a fixed slot count, right-aligned, so columns never move.",
+        "section": "typography"
+      },
+      {
+        "name": "The Soft Lift Rule",
+        "body": "Depth comes from diffuse, tinted shadows and the board's painted frame. No glows, no hard offset shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Board Rule",
+        "body": "Corners are square; roundness belongs only to lamps.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep green for scoreboard furniture: the header strip, the route board, and table heads.",
+      "Do pair every lamp and every red mark with a word; state is never colour alone.",
+      "Do set every metric in Barlow Condensed tabular figures, in enamel plates with fixed slot counts on the board.",
+      "Do keep corners square; only lamps are round.",
+      "Do keep motion to short drop-and-settle moves (240-320ms, `cubic-bezier(0.16, 1, 0.3, 1)`) and turn it off under `prefers-reduced-motion`.",
+      "Do keep the light ground to one 1px hairline and three ink values; heavier rules belong to the board.",
+      "Do self-host both Barlow families; the base type size stays 18px for projection."
+    ],
+    "donts": [
+      "Don't add a second amber-filled control beside Ask.",
+      "Don't use stamp red for anything but failed, blocked, declined, or out-of-scope.",
+      "Don't render the route as a dark node-graph canvas with glowing edges; the route is the rail on the board.",
+      "Don't add glows, bounces, or hard offset shadows.",
+      "Don't set sentences in condensed caps, or figures in proportional digits.",
+      "Don't set small text in filament amber (lamp-deep) or ink three on the grey ground; both fall below 4.5:1."
+    ]
+  }
+}
