@@ -23,6 +23,10 @@ class BudgetBlocked(Exception):
     pass
 
 
+class UpstreamError(Exception):
+    """OpenRouter answered 200 but with no choices (an upstream provider error)."""
+
+
 @dataclass
 class ToolCall:
     id: str
@@ -143,6 +147,19 @@ class LLMClient:
         )
         return result
 
+    async def _create_with_retry(self, kwargs: dict):
+        """OpenRouter can return HTTP 200 with an `error` body and no choices when the
+        upstream provider fails. Those are usually transient, so retry once."""
+        for attempt in (1, 2):
+            resp = await self._client.chat.completions.create(**kwargs)
+            if resp.choices:
+                return resp
+            err = (resp.model_extra or {}).get("error") or {}
+            message = err.get("message") if isinstance(err, dict) else str(err)
+            log.warning("OpenRouter returned no choices", extra={"model": kwargs["model"], "attempt": attempt,
+                                                                 "error": message})
+        raise UpstreamError(f"{kwargs['model']} returned no answer ({message or 'unknown provider error'}). Try again.")
+
     async def _live(self, model, messages, tools, tool_choice) -> LLMResult:
         if self._client is None:
             raise RuntimeError("Live mode needs OPENROUTER_API_KEY in .env.")
@@ -161,7 +178,7 @@ class LLMClient:
             # Routing is easy; keep reasoning models quick and cheap.
             kwargs["extra_body"]["reasoning"] = {"effort": "low"}
 
-        resp = await self._client.chat.completions.create(**kwargs)
+        resp = await self._create_with_retry(kwargs)
         choice = resp.choices[0].message
         usage = resp.usage
         cost = getattr(usage, "cost", None) if usage else None
